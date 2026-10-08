@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Padaria Estrela</title>
+
+    <link rel="stylesheet" href="./static/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="./index.html" class="logo">Padaria Estrela</a>
+
+        <nav class="menu">
+            <a href="./index.html">Home</a>
+            <a href="./templates/produtos.html">Produto</a>
+            <a href="./templates/pedidos.html">Pedidos</a>
+            <a href="./templates/login.html">Minha Conta</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Seção principal -->
+        <section id="home" class="destaque">
+
+            <div class="destaque-texto">
+                <span class="subtitulo">O sucesso é a soma de pequenos esforços repetidos dia após dia.</span>
+
+                <h1>Melhor cafeteria da cidade</h1>
+
+                <p>
+                    Pães fresquinhos, bolos, cafés e muito sabor
+                    para deixar seu dia ainda melhor.
+                </p>
+
+                <a href="#produtos" class="botao">Ver produtos</a>
+            </div>
+
+            <div class="destaque-imagem">
+                <img src="./static/img/dilma.webp" alt="Ambiente da Padaria Estrela">
+            </div>
+
+        </section>
+
+        <!-- Carrossel -->
+        <section id="produtos" class="area-carrossel">
+
+            <span class="subtitulo">Por trás da Padaria Estrela existe uma mulher que acreditou em um sonho e teve coragem para transformá-lo em realidade.</span>
+          
+
+            <div id="carouselPadaria"
+                class="carousel slide carousel-fade"
+                data-bs-ride="carousel">
+
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                        data-bs-target="#carouselPadaria"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Café">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#carouselPadaria"
+                        data-bs-slide-to="1"
+                        aria-label="Bolo">
+                    </button>
+
+                    <button type="button"
+                        data-bs-target="#carouselPadaria"
+                        data-bs-slide-to="2"
+                        aria-label="Torta">
+                    </button>
+
+                </div>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./static/img/eu.jpg"
+                            class="d-block w-100"
+                            alt="amigo da dilma">
+
+                        <div class="carousel-caption">
+                            <h3>dilma</h3>
+                            <p>
+                                Com as próprias mãos, muito trabalho e um coração cheio de esperança, construiu uma história que atravessa gerações.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./static/img/comendo.jpg"
+                            class="d-block w-100"
+                            alt="Bolo fresquinho">
+
+                        <div class="carousel-caption">
+                            <h3></h3>
+                            <p>
+                               Hoje, cada pão, cada bolo e cada café carregam um pouco dessa história.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./static/img/dilma-premio-economia.webp"
+                            class="d-block w-100"
+                            alt="Torta doce">
+
+                        <div class="carousel-caption">
+                            <h3>🥧 13</h3>
+                            <p>
+                                Não construímos apenas uma padaria. Construímos um lugar onde famílias se encontram, histórias são compartilhadas e momentos se tornam memórias.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Botão anterior -->
+                <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselPadaria"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+                </button>
+
+                <!-- Botão próximo -->
+                <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselPadaria"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Próximo
+                    </span>
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- História da padaria -->
+        <section id="historia" class="area-historia">
+
+            <span class="subtitulo">Desde 1980</span>
+
+            <h2>Nossa História</h2>
+
+            <div class="historia-card">
+
+                <div class="ano-historia">
+                    1980
+                </div>
+
+                <div class="historia-texto">
+
+                    <p>
+                        Em <strong>1980</strong>, nasceu mais do que uma padaria.
+                        Nasceu um sonho: criar um lugar onde as pessoas pudessem
+                        encontrar produtos fresquinhos e momentos especiais.
+                    </p>
+
+                    <p>
+                        Com simplicidade, dedicação e muito trabalho, a
+                        <strong>Padaria Estrela</strong> começou sua jornada
+                        oferecendo pães, bolos, cafés e tortas preparados com
+                        carinho e ingredientes selecionados.
+                    </p>
+
+                    <p>
+                        No início, cada pão saindo quentinho do forno, cada bolo
+                        preparado com cuidado e cada café servido com um sorriso
+                        ajudaram a construir nossa história.
+                    </p>
+
+                    <p>
+                        Ao longo dos anos, nossos clientes deixaram de ser apenas
+                        clientes e passaram a fazer parte da nossa família.
+                        Crianças cresceram, famílias aumentaram e muitos momentos
+                        se transformaram em lembranças inesquecíveis.
+                    </p>
+
+                    <p>
+                        O tempo passou, mas uma coisa nunca mudou:
+                        <strong>o carinho por cada pessoa que entra pela nossa porta.</strong>
+                    </p>
+
+                    <p>
+                        Hoje, seguimos trabalhando com a mesma dedicação de 1980,
+                        mantendo a tradição e levando sabor para todas as famílias.
+                    </p>
+
+                    <div class="frase-historia">
+                        <span>♥</span>
+                        Desde 1980, fazendo parte de momentos que merecem ser lembrados.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>Padaria Estrela</h3>
+
+        <p>Qualidade e sabor todos os dias!</p>
+        <p>📍 Rua da Padaria, 100</p>
+        <p>📞 (11) 99999-9999</p>
+        <p>📧 contato@padaria.com</p>
+
+        <p>© 2026 Padaria Estrela - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
