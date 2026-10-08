@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produtos - Padaria Estrela</title>
+
+    <link rel="stylesheet" th:href="@{/css/produtos.css}">
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+
+<header>
+
+    <a th:href="@{/}" class="logo">
+        Padaria Estrela
+    </a>
+
+    <nav class="menu">
+
+        <a th:href="@{/}">
+            Home
+        </a>
+
+        <a th:href="@{/gestao/produtos}">
+            Produtos
+        </a>
+
+        <a th:href="@{/gestao/pedidos}">
+            Pedidos
+        </a>
+
+        <a th:href="@{/gestao/login}">
+            Minha Conta
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <!-- TÍTULO -->
+
+    <section class="titulo">
+
+        <h2>
+            Nossos Produtos
+        </h2>
+
+        <p>
+            Confira nossas delícias feitas com carinho!
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         BEBIDAS GELADAS
+    ========================== -->
+
+    <section class="categoria">
+
+        <h2>
+            Bebidas Geladas
+        </h2>
+
+        <div class="produtos">
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/cafegelado.webp}"
+                        alt="Café gelado">
+
+                <h3>
+                    Café Gelado
+                </h3>
+
+                <p>
+                    Café gelado cremoso e refrescante.
+                </p>
+
+                <span>
+                        R$ 8,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/milkshake.jpg}"
+                        alt="Milk-shake">
+
+                <h3>
+                    Milk-shake
+                </h3>
+
+                <p>
+                    Milk-shake cremoso e delicioso.
+                </p>
+
+                <span>
+                        R$ 12,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/saladade frutas.webp}"
+                        alt="Suco e frutas naturais">
+
+                <h3>
+                    Suco Natural
+                </h3>
+
+                <p>
+                    Suco natural preparado com frutas frescas.
+                </p>
+
+                <span>
+                        R$ 7,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BEBIDAS QUENTES
+    ========================== -->
+
+    <section class="categoria">
+
+        <h2>
+            Bebidas Quentes
+        </h2>
+
+        <div class="produtos">
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/cafe.png}"
+                        alt="Café com leite">
+
+                <h3>
+                    Café com Leite
+                </h3>
+
+                <p>
+                    Café quentinho combinado com leite cremoso.
+                </p>
+
+                <span>
+                        R$ 5,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/mocaccino.png}"
+                        alt="Mocaccino">
+
+                <h3>
+                    Mocaccino
+                </h3>
+
+                <p>
+                    Café, chocolate e leite com uma camada cremosa.
+                </p>
+
+                <span>
+                        R$ 9,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/matcha.png}"
+                        alt="Matcha Latte">
+
+                <h3>
+                    Matcha Latte
+                </h3>
+
+                <p>
+                    Matcha cremoso com leite, perfeito para qualquer momento.
+                </p>
+
+                <span>
+                        R$ 10,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         LANCHES SALGADOS
+    ========================== -->
+
+    <section class="categoria">
+
+        <h2>
+            Lanches Salgados
+        </h2>
+
+        <div class="produtos">
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/misto.jpg}"
+                        alt="Misto quente">
+
+                <h3>
+                    Misto Quente
+                </h3>
+
+                <p>
+                    Pão tostado com presunto e queijo derretido.
+                </p>
+
+                <span>
+                        R$ 7,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/esfiha.webp}"
+                        alt="Esfiha">
+
+                <h3>
+                    Esfiha
+                </h3>
+
+                <p>
+                    Esfiha assada, saborosa e preparada com carinho.
+                </p>
+
+                <span>
+                        R$ 6,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/empadinha.webp}"
+                        alt="Empadinha">
+
+                <h3>
+                    Empadinha
+                </h3>
+
+                <p>
+                    Massa leve e recheio cremoso e saboroso.
+                </p>
+
+                <span>
+                        R$ 7,50
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PADARIA E CONFEITARIA
+    ========================== -->
+
+    <section class="categoria">
+
+        <h2>
+            Padaria e Confeitaria
+        </h2>
+
+        <div class="produtos">
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/po.webp}"
+                        alt="Pão de queijo">
+
+                <h3>
+                    Pão de Queijo
+                </h3>
+
+                <p>
+                    Quentinho, dourado por fora e macio por dentro.
+                </p>
+
+                <span>
+                        R$ 6,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/Pave-Simples.webp}"
+                        alt="Pavê">
+
+                <h3>
+                    Pavê
+                </h3>
+
+                <p>
+                    Sobremesa cremosa preparada com muito carinho.
+                </p>
+
+                <span>
+                        R$ 9,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/PUDIM.jpg}"
+                        alt="Pudim">
+
+                <h3>
+                    Pudim
+                </h3>
+
+                <p>
+                    Pudim cremoso com deliciosa calda de caramelo.
+                </p>
+
+                <span>
+                        R$ 8,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         SOBREMESAS
+    ========================== -->
+
+    <section class="categoria">
+
+        <h2>
+            Sobremesas
+        </h2>
+
+        <div class="produtos">
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/PUDIM.jpg}"
+                        alt="Pudim">
+
+                <h3>
+                    Pudim
+                </h3>
+
+                <p>
+                    Delicioso pudim com calda de caramelo.
+                </p>
+
+                <span>
+                        R$ 8,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <img
+                        th:src="@{/img/mouse.jpg}"
+                        alt="Mousse">
+
+                <h3>
+                    Mousse
+                </h3>
+
+                <p>
+                    Mousse cremoso e irresistível.
+                </p>
+
+                <span>
+                        R$ 8,00
+                    </span>
+
+                <button type="button">
+                    Comprar
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+
+</html>

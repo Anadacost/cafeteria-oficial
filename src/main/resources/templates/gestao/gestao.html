@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Administração - Padaria Estrela</title>
+
+    <link rel="stylesheet" th:href="@{/css/administracao.css}">
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+
+<header class="cabecalho">
+
+    <div class="logo-area">
+        <a th:href="@{/}" class="logo">
+            Padaria Estrela
+        </a>
+
+        <span class="admin-texto">
+                Administração
+            </span>
+    </div>
+
+    <nav class="menu">
+
+        <a th:href="@{/}">
+            Home
+        </a>
+
+        <a th:href="@{/gestao/produtos}">
+            Produtos
+        </a>
+
+        <a th:href="@{/gestao/pedidos}">
+            Pedidos
+        </a>
+
+        <a th:href="@{/gestao/login}">
+            Minha Conta
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- CONTEÚDO -->
+
+<main class="pagina-administracao">
+
+    <!-- TÍTULO -->
+
+    <section class="titulo-pagina">
+
+            <span class="subtitulo">
+                PAINEL DE CONTROLE
+            </span>
+
+        <h1>
+            Gestão da Padaria
+        </h1>
+
+        <p>
+            Gerencie produtos, pedidos e informações
+            da Padaria Estrela.
+        </p>
+
+    </section>
+
+
+    <!-- CARDS DE RESUMO -->
+
+    <section class="resumo">
+
+        <div class="card-resumo">
+
+            <div class="icone">
+                🛍️
+            </div>
+
+            <div>
+                    <span>
+                        Produtos
+                    </span>
+
+                <strong>
+                    24
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="card-resumo">
+
+            <div class="icone">
+                📦
+            </div>
+
+            <div>
+                    <span>
+                        Pedidos
+                    </span>
+
+                <strong>
+                    18
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="card-resumo">
+
+            <div class="icone">
+                👥
+            </div>
+
+            <div>
+                    <span>
+                        Clientes
+                    </span>
+
+                <strong>
+                    42
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="card-resumo">
+
+            <div class="icone">
+                💰
+            </div>
+
+            <div>
+                    <span>
+                        Vendas
+                    </span>
+
+                <strong>
+                    R$ 1.250,00
+                </strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ÁREA DE GESTÃO -->
+
+    <section class="area-gestao">
+
+        <h2>
+            Gerenciamento
+        </h2>
+
+        <p class="descricao">
+            Escolha uma opção para administrar a padaria.
+        </p>
+
+
+        <div class="cards-gestao">
+
+
+            <!-- PRODUTOS -->
+
+            <a th:href="@{/gestao/produtos}" class="card-gestao">
+
+                <div class="icone-card">
+                    🥐
+                </div>
+
+                <div class="conteudo-card">
+
+                    <h3>
+                        Gerenciar Produtos
+                    </h3>
+
+                    <p>
+                        Cadastre, edite e remova os produtos
+                        disponíveis na Padaria Estrela.
+                    </p>
+
+                </div>
+
+                <span class="seta">
+                        →
+                    </span>
+
+            </a>
+
+
+            <!-- PEDIDOS -->
+
+            <a th:href="@{/gestao/pedidos}" class="card-gestao">
+
+                <div class="icone-card">
+                    📋
+                </div>
+
+                <div class="conteudo-card">
+
+                    <h3>
+                        Gerenciar Pedidos
+                    </h3>
+
+                    <p>
+                        Consulte os pedidos dos clientes
+                        e acompanhe seus status.
+                    </p>
+
+                </div>
+
+                <span class="seta">
+                        →
+                    </span>
+
+            </a>
+
+
+            <!-- CLIENTES -->
+
+            <a th:href="@{/gestao/clientes}" class="card-gestao">
+
+                <div class="icone-card">
+                    👥
+                </div>
+
+                <div class="conteudo-card">
+
+                    <h3>
+                        Clientes
+                    </h3>
+
+                    <p>
+                        Visualize e gerencie os clientes
+                        cadastrados no sistema.
+                    </p>
+
+                </div>
+
+                <span class="seta">
+                        →
+                    </span>
+
+            </a>
+
+
+            <!-- RELATÓRIOS -->
+
+            <a th:href="@{/gestao/relatorios}" class="card-gestao">
+
+                <div class="icone-card">
+                    📊
+                </div>
+
+                <div class="conteudo-card">
+
+                    <h3>
+                        Relatórios
+                    </h3>
+
+                    <p>
+                        Consulte informações sobre vendas,
+                        pedidos e produtos.
+                    </p>
+
+                </div>
+
+                <span class="seta">
+                        →
+                    </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- PEDIDOS RECENTES -->
+
+    <section class="pedidos-recentes">
+
+        <div class="cabecalho-secao">
+
+            <div>
+                <h2>
+                    Pedidos recentes
+                </h2>
+
+                <p>
+                    Acompanhe os últimos pedidos realizados.
+                </p>
+            </div>
+
+            <a th:href="@{/gestao/pedidos}" class="link-ver-todos">
+                Ver todos
+            </a>
+
+        </div>
+
+
+        <div class="tabela-container">
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>
+                        Pedido
+                    </th>
+
+                    <th>
+                        Cliente
+                    </th>
+
+                    <th>
+                        Data
+                    </th>
+
+                    <th>
+                        Valor
+                    </th>
+
+                    <th>
+                        Status
+                    </th>
+
+                </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                <tr>
+
+                    <td>
+                        #001
+                    </td>
+
+                    <td>
+                        Maria Silva
+                    </td>
+
+                    <td>
+                        08/10/2026
+                    </td>
+
+                    <td>
+                        R$ 45,00
+                    </td>
+
+                    <td>
+                                <span class="status entregue">
+                                    Entregue
+                                </span>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        #002
+                    </td>
+
+                    <td>
+                        João Santos
+                    </td>
+
+                    <td>
+                        08/10/2026
+                    </td>
+
+                    <td>
+                        R$ 32,00
+                    </td>
+
+                    <td>
+                                <span class="status preparando">
+                                    Em preparo
+                                </span>
+                    </td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>
+                        #003
+                    </td>
+
+                    <td>
+                        Ana Oliveira
+                    </td>
+
+                    <td>
+                        07/10/2026
+                    </td>
+
+                    <td>
+                        R$ 68,00
+                    </td>
+
+                    <td>
+                                <span class="status aguardando">
+                                    Aguardando
+                                </span>
+                    </td>
+
+                </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- RODAPÉ -->
+
+<footer>
+
+    <h3>
+        Padaria Estrela
+    </h3>
+
+    <p>
+        Qualidade e sabor todos os dias!
+    </p>
+
+    <p>
+        📍 Rua da Padaria, 100
+    </p>
+
+    <p>
+        📞 (11) 99999-9999
+    </p>
+
+    <p>
+        © 2026 Padaria Estrela
+    </p>
+
+</footer>
+
+</body>
+
+</html>

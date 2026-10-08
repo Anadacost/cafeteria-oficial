@@ -1,0 +1,526 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8ef;
+    color: #432719;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    width: 100%;
+    min-height: 80px;
+    background-color: #4b2818;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo {
+    color: #fff8ef;
+    text-decoration: none;
+
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.admin-texto {
+    color: #f2ae66;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    border-left: 1px solid #85604c;
+    padding-left: 18px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.menu a {
+    color: #fff8ef;
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f2ae66;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina-administracao {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 55px 0 70px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-pagina {
+    margin-bottom: 35px;
+}
+
+.titulo-pagina .subtitulo {
+    color: #b36a35;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+.titulo-pagina h1 {
+    margin-top: 8px;
+
+    font-size: 38px;
+    color: #432719;
+}
+
+.titulo-pagina p {
+    margin-top: 10px;
+
+    color: #76594a;
+    font-size: 16px;
+}
+
+
+/* =========================
+   RESUMO
+========================= */
+
+.resumo {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 45px;
+}
+
+.card-resumo {
+    background-color: #ffffff;
+
+    border: 1px solid #ead9c9;
+    border-radius: 12px;
+
+    padding: 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    box-shadow: 0 4px 12px rgba(67, 39, 25, 0.06);
+}
+
+.card-resumo .icone {
+    width: 52px;
+    height: 52px;
+
+    background-color: #fff0df;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+}
+
+.card-resumo span {
+    display: block;
+
+    color: #76594a;
+
+    font-size: 14px;
+
+    margin-bottom: 5px;
+}
+
+.card-resumo strong {
+    display: block;
+
+    color: #432719;
+
+    font-size: 21px;
+}
+
+
+/* =========================
+   ÁREA DE GESTÃO
+========================= */
+
+.area-gestao {
+    margin-bottom: 50px;
+}
+
+.area-gestao h2,
+.pedidos-recentes h2 {
+    color: #432719;
+
+    font-size: 25px;
+}
+
+.descricao {
+    margin-top: 6px;
+    margin-bottom: 22px;
+
+    color: #76594a;
+}
+
+.cards-gestao {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CARDS DE GESTÃO
+========================= */
+
+.card-gestao {
+    background-color: #ffffff;
+
+    border: 1px solid #ead9c9;
+    border-radius: 14px;
+
+    padding: 25px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+
+    text-decoration: none;
+
+    position: relative;
+
+    transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(67, 39, 25, 0.05);
+}
+
+.card-gestao:hover {
+    transform: translateY(-3px);
+
+    border-color: #d99a5b;
+
+    box-shadow: 0 8px 20px rgba(67, 39, 25, 0.10);
+}
+
+.icone-card {
+    min-width: 58px;
+    height: 58px;
+
+    background-color: #fff0df;
+
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 27px;
+}
+
+.conteudo-card {
+    padding-right: 25px;
+}
+
+.conteudo-card h3 {
+    color: #432719;
+
+    font-size: 18px;
+
+    margin-bottom: 7px;
+}
+
+.conteudo-card p {
+    color: #76594a;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+.seta {
+    position: absolute;
+
+    right: 20px;
+
+    color: #b36a35;
+
+    font-size: 24px;
+
+    transition: 0.3s;
+}
+
+.card-gestao:hover .seta {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   PEDIDOS RECENTES
+========================= */
+
+.pedidos-recentes {
+    background-color: #ffffff;
+
+    border: 1px solid #ead9c9;
+    border-radius: 14px;
+
+    padding: 28px;
+
+    box-shadow: 0 4px 12px rgba(67, 39, 25, 0.05);
+}
+
+.cabecalho-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 22px;
+}
+
+.cabecalho-secao p {
+    color: #76594a;
+
+    margin-top: 5px;
+
+    font-size: 14px;
+}
+
+.link-ver-todos {
+    color: #a85f2d;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.link-ver-todos:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+.tabela-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #fff4e7;
+}
+
+th {
+    color: #5b3928;
+
+    text-align: left;
+
+    padding: 15px;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+}
+
+td {
+    padding: 16px 15px;
+
+    border-top: 1px solid #eee1d5;
+
+    color: #5f4638;
+
+    font-size: 14px;
+}
+
+td:first-child {
+    font-weight: bold;
+
+    color: #432719;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.status.entregue {
+    background-color: #e7f5e8;
+    color: #32743b;
+}
+
+.status.preparando {
+    background-color: #fff1d9;
+    color: #a66417;
+}
+
+.status.aguardando {
+    background-color: #fbe6e6;
+    color: #a33d3d;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background-color: #4b2818;
+
+    color: #fff8ef;
+
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+footer h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 6px 0;
+
+    color: #ead8ca;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        flex-direction: column;
+
+        gap: 18px;
+
+        padding: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .resumo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .pagina-administracao {
+        width: 92%;
+
+        padding-top: 35px;
+    }
+
+    .logo-area {
+        flex-direction: column;
+
+        gap: 8px;
+    }
+
+    .admin-texto {
+        border-left: none;
+
+        padding-left: 0;
+    }
+
+    .titulo-pagina h1 {
+        font-size: 30px;
+    }
+
+    .resumo {
+        grid-template-columns: 1fr;
+    }
+
+    .cards-gestao {
+        grid-template-columns: 1fr;
+    }
+
+    .pedidos-recentes {
+        padding: 18px;
+    }
+
+}
